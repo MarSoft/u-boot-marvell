@@ -47,4 +47,9 @@
 #define CONFIG_CMD_PCI
 #endif
 
+#ifndef CONFIG_SPL_BUILD
+#include <config_distro_bootcmd.h>
+#include <config_distro_defaults.h>
+#endif
+
 #endif /* _CONFIG_MVEBU_ARMADA_37XX_H */
